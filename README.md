@@ -56,6 +56,8 @@ For future value prediction, I splitted my data into train and test with test se
 Due to lack of time, I could only apply two methods on the data but the evaluation score can be improved by:
  - Using a Deep Learning approach like LSTMs. (As the data is sufficiently large)
  - Using Auto ARIMA.(In case the values are independent of each other).
+ - If we get the outside temperature data then the predictions can be improved as in case of missing value treatment, temperature can be taken as X_train to predict the mssing value data.
+ - With the help of temperature data, the future values too can be predicted in a better way.
  
 Both the approaches specified above take lot of time.
  
