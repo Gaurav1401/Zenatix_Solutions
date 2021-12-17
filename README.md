@@ -61,7 +61,7 @@ Due to lack of time, I could only apply two methods on the data but the evaluati
  - With the help of temperature data, the future values too can be predicted in a better way.
  - Using the concept of **Fourier Transform** and **smoothing techniques**, we can decompose the time series data to understand its trend and patterns.
  
-Both the approaches specified above take lot of time.
+Both the approaches specified in first two points take lot of time.
  
  
 
