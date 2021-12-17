@@ -20,10 +20,11 @@ In the initial phase, I just tried to analyse the data to have a basic idea abou
 Initially, I was thinking to use "Last Observation Carried Forward"(LOCF)/Backward Filling to fill the missing values, but that would disturb the patterns in the data as it is not practically possible that AC power consumption changes suddenly after a constant value for a particular amount of time.<br>
 So, I tried another approach to fill the missing values considering that the power consumpiton follows `Gaussian Phenomenan`.<br>
 ```
-AC power consumption depends on the Outside Temparature and temperature is a natural phenomenan and since most of the 
-naturally ocurring phenomenan follows Gaussian Distribution, I used Gaussian Process Regression to predict the missing 
-values considering given power consumption as y_train and the corresponding alternate sequence of 0-87839 as X_train 
-and similarly the sequence corresponding to missing values became my X_test.
+AC power consumption depends on the Outside Temparature and temperature is a natural phenomenan and 
+since most of the naturally ocurring phenomenan follows Gaussian Distribution, I used Gaussian Process 
+Regression to predict the missing values considering given power consumption as y_train and the 
+corresponding alternate sequence of 0-87839 as X_train and similarly the sequence corresponding 
+to missing values became my X_test.
 ```
 [Click here](https://scikit-learn.org/stable/auto_examples/gaussian_process/plot_gpr_noisy_targets.html#sphx-glr-auto-examples-gaussian-process-plot-gpr-noisy-targets-py) to read the basic implementation of **Gaussian Process Regression**.
 
@@ -58,6 +59,7 @@ Due to lack of time, I could only apply two methods on the data but the evaluati
  - Using Auto ARIMA.(In case the values are independent of each other).
  - If we get the **outside temperature data** then the predictions can be improved as in case of missing value treatment, temperature can be taken as X_train to predict the mssing value data.
  - With the help of temperature data, the future values too can be predicted in a better way.
+ - Using the concept of **Fourier Transform** and **smoothing techniques**, we can decompose the time series data to understand its trend and patterns.
  
 Both the approaches specified above take lot of time.
  
