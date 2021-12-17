@@ -30,7 +30,7 @@ to missing values became my X_test.
 
 But in order to apply Gaussian Process regression **Feature Scaling** was necessary so I **Standardised** the whole dataset before making predictions for missing value treatment.
 
-After getting the predictions, the missing values were filled and **inverse_transformation** was done to get the original values back.
+After getting the predictions, the missing values were filled and **inverse_transformation** was done to get the original values back and this data was stored in the "another_data.csv" file.
 
 ### Forecasting 
 For future value prediction, I splitted my data into train and test with test set having the last 120 observations i.e. the data of last 2 hours.
