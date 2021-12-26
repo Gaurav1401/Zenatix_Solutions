@@ -46,6 +46,10 @@ For future value prediction, I splitted my data into train and test with test se
  The results I got using this approach were not as good as **VAR**.<br>
  I used the concept of **Multiprocessing** to predict the value of each column parallely in order to reduce time.
  
+ - **Neural Prophet**<br>
+ **Click here to view its implementation**:- [Click here](https://github.com/Gaurav1401/Zenatix_Solutions/blob/main/Part%20-%203.ipynb)<br>
+ This approach is the extension of prophet with neural network with pytorch implementation in the backend. It is a kind of black box model as it is not much iterpretable so it is still a research topic.
+ 
 ### Conclusion:
  - Looking at the results of the two methods that I used and keeping their assumptions in mind, it can be said that this data is of those AC's which are located in a big room or a lounge in a **Gurugram hotel**.
 
